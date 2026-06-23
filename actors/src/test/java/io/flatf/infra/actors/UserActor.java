@@ -10,7 +10,7 @@ public class UserActor extends BaseActorT1<User> {
         return Props.create(UserActor.class, UserActor::new);
     }
 
-    // 濡傛灉鏈夋瀯閫犲弬鏁? 渚挎寜鐓у涓嬫柟寮忔瀯閫?Props 鍗冲彲
+    // 如果有构造参数，便按照如下方式构造 Props 即可
 //    public static Props props(Object parameters) {
 //        return Props.create(UserLoginActor.class, () -> new UserLoginActor(parameters));
 //    }

@@ -17,7 +17,9 @@ import static io.flatf.common.log4j2.Log4j2LoggerFactory.getLogger;
 
 public class ZmqReceiver extends ZmqComponent implements Receiver, Closeable {
 
-    private static final Logger log = getLogger(ZmqPublisher.class);
+    // 旧实现（logger 声明为 ZmqPublisher, 复制粘贴错误；按约定注释保留）
+    // private static final Logger log = getLogger(ZmqPublisher.class);
+    private static final Logger log = getLogger(ZmqReceiver.class);
 
     private final Function<byte[], byte[]> handler;
 
